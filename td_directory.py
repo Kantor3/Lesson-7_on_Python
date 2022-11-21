@@ -163,7 +163,6 @@ def adding_contacts(contacts_add, uniq=True):
         key_record = record.keys()
         record_new = {id_name: get_uniqid()}                        # первое поле - ключ записи (id)
         add_records.append(record_new)
-
         for k in structure[1:]:
             record_new[k] = record[k] if k in key_record else None  # Присваиваем None при отсутствии нужного поля
         contacts.append(record_new)

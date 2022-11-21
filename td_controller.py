@@ -178,7 +178,7 @@ def manager(non_zero=None):
         if operation is None and myl.check_exit(operation):  # Выход
             break
 
-        elif operation == '-h':
+        elif operation == '-h':  # Вывод меню на экран
             vw.output_menu()
 
         elif operation == '-r':  # Вывод данных о контакте, в т.ч. поиск по имени

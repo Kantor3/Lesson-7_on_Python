@@ -86,7 +86,6 @@ def get_inputs(*input_params, type_input=int, end=None, not_mess=None, all_input
     cnt_params = len(input_params)
 
     for param in input_params:
-
         if type_input == tuple:
             if isinstance(param[0], tuple):
                 ranges = (param[0], None, param[1] if len(param) == 3 else None)
@@ -97,7 +96,6 @@ def get_inputs(*input_params, type_input=int, end=None, not_mess=None, all_input
                                     txt=param[-1], type_input=type_input, end=end, not_mess=not_mess)
         else:
             input_param = get_input(txt=param, type_input=type_input, end=end, not_mess=not_mess)
-
         if all_input is None and input_param is None:
             break
 
